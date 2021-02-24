@@ -1,0 +1,78 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Eren",
+      "lastname": "Yaeger",
+      "email": "Eren@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Levi",
+      "lastname": "Ackerman",
+      "email": "Levi@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Mikasa",
+      "lastname": "Ackerman",
+      "email": "Misaka@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Naruto",
+      "lastname": "Uzumaki",
+      "email": "Naruto@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Sakura",
+      "lastname": "Haruno",
+      "email": "Sakura@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Sasuke",
+      "lastname": "Uchiha",
+      "email": "Sasuke@gmail.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Some title",
+      "body": "Some content",
+      "author": 1
+    },
+    {
+      "title": "Some funny title",
+      "body": "Content of the post",
+      "author": "1",
+      "id": 2
+    },
+    {
+      "title": "aaaa",
+      "body": "bbbb",
+      "author": "1",
+      "id": 3
+    },
+    {
+      "title": "Call",
+      "body": "Him",
+      "author": "2",
+      "id": 4
+    },
+    {
+      "title": "Replace",
+      "body": "This",
+      "author": "3",
+      "id": 5
+    },
+    {
+      "title": "Delete",
+      "body": "Me",
+      "author": "3",
+      "id": 6
+    }
+  ]
+}
