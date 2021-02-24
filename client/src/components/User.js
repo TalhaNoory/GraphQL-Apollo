@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Card, CardGroup, Form, Button } from 'react-bootstrap';
 
 import { useQuery, useLazyQuery } from '@apollo/client';
-import {GET_ALL_USERS, GET_USER_BY_ID} from './GraphQL/QueryUser'
+import {GET_ALL_USERS, GET_USER_BY_ID} from './GraphQL/Queries'
 
-const Home = () => {
+const User = () => {
   const [user, setUser] = useState('');
   const getUsers = useQuery(GET_ALL_USERS);
   const [userGetLazy, userGetLazyResult] = useLazyQuery(GET_USER_BY_ID);
@@ -42,6 +42,7 @@ const Home = () => {
         {allUsersHandler()}
       </CardGroup>
       <div>
+      <hr/>
         <h3>Get user by id: </h3>
         <Form onSubmit={handleSubmit}>
           <Form.Group>
@@ -66,4 +67,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default User;

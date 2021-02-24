@@ -4,20 +4,21 @@ import {
     BrowserRouter,
     Switch,
     Route,
-  } from "react-router-dom";
+} from "react-router-dom";
 
-import Header from './components/header';
-import Home from './components/home';
+import Header from './components/Menu/Header';
+import Home from './components/Menu/Home';
 import User from './components/User';
+import CreateUSer from './components/CreateUser';
 
-
-const Routes = ()=>(
+const Routes = () => (
     <BrowserRouter>
-        <Header/>
+        <Header />
         <Container className="mt-5">
             <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route path="/user" component={User}/>
+                <Route exact path="/" component={Home} />
+                <Route path="/user" component={User} />
+                <Route path="/createuser" component={CreateUSer} />
             </Switch>
         </Container>
     </BrowserRouter>

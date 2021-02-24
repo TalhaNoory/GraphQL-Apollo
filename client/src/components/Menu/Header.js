@@ -4,7 +4,7 @@ import { LinkContainer } from "react-router-bootstrap";
 
 const Header = () => (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Raahandel</Navbar.Brand>
+        <Navbar.Brand>Raahandel</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
@@ -13,6 +13,9 @@ const Header = () => (
                 </LinkContainer>
                 <LinkContainer to="/user">
                     <Nav.Link>User</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/createuser">
+                    <Nav.Link>Create User</Nav.Link>
                 </LinkContainer>
             </Nav>
         </Navbar.Collapse>
