@@ -16,7 +16,7 @@ const resolvers = {
                 const delayed = await new Promise( resolve => {
                     setTimeout(()=>{
                         resolve(request)
-                    },2000)
+                    },500)
                 })
                 return request.data;
             } catch(error) {

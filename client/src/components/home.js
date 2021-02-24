@@ -1,27 +1,7 @@
 import React, { useState } from 'react';
-import { gql, useQuery, useLazyQuery } from '@apollo/client';
+import { useQuery, useLazyQuery } from '@apollo/client';
+import {GET_ALL_USERS, GET_USER_BY_ID} from './GraphQL/QueryUser'
 import { Card, CardGroup, Form, Button } from 'react-bootstrap';
-
-const GET_USER_BY_ID = gql`
-  query getUserById($id:ID!){
-    user(id:$id) {
-      id
-      name
-      lastname
-      email
-    }
-  }
-`;
-
-const GET_ALL_USERS = gql`
-  query {
-    users{
-      name
-      lastname
-      email
-    }
-  }
-`;
 
 const Home = () => {
   const [user, setUser] = useState('');
@@ -35,9 +15,9 @@ const Home = () => {
       getUsers.data.users.map((user, i) => (
         <Card key={i}>
           <Card.Body>
-            <Card.Title>{user.email}</Card.Title>
+            <Card.Title>{user.id}</Card.Title>
             <Card.Text>{user.name}</Card.Text>
-            <Card.Text>{user.lastname}</Card.Text>
+            <Card.Text>{user.role}</Card.Text>
           </Card.Body>
         </Card>
       ))
