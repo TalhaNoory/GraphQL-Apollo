@@ -16,8 +16,8 @@ const Routes = ()=>(
         <Header/>
         <Container className="mt-5">
             <Switch>
+                <Route exact path="/" component={Home}/>
                 <Route path="/Posts" component={Posts}/>
-                <Route path="/" component={Home}/>
             </Switch>
         </Container>
     </BrowserRouter>
