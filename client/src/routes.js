@@ -8,7 +8,6 @@ import {
 
 import Header from './components/header';
 import Home from './components/home';
-import Posts from './components/posts';
 
 
 const Routes = ()=>(
@@ -17,7 +16,6 @@ const Routes = ()=>(
         <Container className="mt-5">
             <Switch>
                 <Route exact path="/" component={Home}/>
-                <Route path="/Posts" component={Posts}/>
             </Switch>
         </Container>
     </BrowserRouter>

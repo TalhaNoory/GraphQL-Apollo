@@ -36,43 +36,5 @@
       "lastname": "Uchiha",
       "email": "Sasuke@gmail.com"
     }
-  ],
-  "posts": [
-    {
-      "id": 1,
-      "title": "Some title",
-      "body": "Some content",
-      "author": 1
-    },
-    {
-      "title": "Some funny title",
-      "body": "Content of the post",
-      "author": "1",
-      "id": 2
-    },
-    {
-      "title": "aaaa",
-      "body": "bbbb",
-      "author": "1",
-      "id": 3
-    },
-    {
-      "title": "Call",
-      "body": "Him",
-      "author": "2",
-      "id": 4
-    },
-    {
-      "title": "Replace",
-      "body": "This",
-      "author": "3",
-      "id": 5
-    },
-    {
-      "title": "Delete",
-      "body": "Me",
-      "author": "3",
-      "id": 6
-    }
   ]
 }
