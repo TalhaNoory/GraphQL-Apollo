@@ -54,14 +54,14 @@ const Home = () => {
         </Form>
         {userGetLazyResult.data ?
           <div className="m-3">
+            <div>ID: {userGetLazyResult.data.user.id}</div>
             <div>Name: {userGetLazyResult.data.user.name}</div>
-            <div>Lastname: {userGetLazyResult.data.user.lastname}</div>
-            <div>Email: {userGetLazyResult.data.user.email}</div>
+            <div>Lastname: {userGetLazyResult.data.user.role}</div>
           </div>
           : null
         }
       </div>
-      <hr />
+      {/* <hr />
       <Button
         onClick={() => getUsers.startPolling(3000)}
       >
@@ -76,7 +76,7 @@ const Home = () => {
         onClick={() => getUsers.refetch()}
       >
         REFETCH!
-      </Button>
+      </Button> */}
     </div>
   );
 };
