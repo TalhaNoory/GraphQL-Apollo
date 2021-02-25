@@ -17,6 +17,9 @@ const Header = () => (
                 <LinkContainer to="/createuser">
                     <Nav.Link>Create User</Nav.Link>
                 </LinkContainer>
+                <LinkContainer to="/updateuser">
+                    <Nav.Link>Update User</Nav.Link>
+                </LinkContainer>
             </Nav>
         </Navbar.Collapse>
     </Navbar>

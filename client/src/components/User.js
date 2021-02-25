@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardGroup, Form, Button } from 'react-bootstrap';
 
 import { useQuery, useLazyQuery } from '@apollo/client';
-import {GET_ALL_USERS, GET_USER_BY_ID} from './GraphQL/Queries'
+import { GET_ALL_USERS, GET_USER_BY_ID } from './GraphQL/Queries'
 
 const User = () => {
   const [user, setUser] = useState('');
@@ -42,7 +42,7 @@ const User = () => {
         {allUsersHandler()}
       </CardGroup>
       <div>
-      <hr/>
+        <hr />
         <h3>Get user by id: </h3>
         <Form onSubmit={handleSubmit}>
           <Form.Group>
@@ -53,6 +53,11 @@ const User = () => {
             />
           </Form.Group>
           <Button type="submit">Submit</Button>
+          <Button
+            onClick={() => getUsers.refetch()}
+          >
+            REFETCH!
+          </Button>
         </Form>
         {userGetLazyResult.data ?
           <div className="m-3">

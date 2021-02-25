@@ -69,14 +69,19 @@
       "role": "PRODUCER"
     },
     {
+      "id": "ckesaa4b9000101md3iam04yt",
+      "name": "Producent B",
+      "role": "PRODUCER"
+    },
+    {
       "id": "ckhd3p8rx000301l44l6hbscs",
       "name": "Kunde A",
       "role": "CUSTOMER"
     },
     {
       "id": "ckf2aggbo000101ji0cs6y4et",
-      "name": "Producent B",
-      "role": "PRODUCER"
+      "name": "Kunde B",
+      "role": "CUSTOMER"
     }
   ],
   "product": [

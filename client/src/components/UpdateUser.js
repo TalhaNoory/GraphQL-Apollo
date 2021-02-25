@@ -3,11 +3,11 @@ import { useFormik } from 'formik';
 import { Form, Button } from 'react-bootstrap';
 
 import { useMutation } from '@apollo/client';
-import { ADD_USER } from './GraphQL/Mutation';
+import { UPDATE_USER } from './GraphQL/Mutation';
 
 const CreaterUser = () => {
 
-    const [addUser] = useMutation(ADD_USER, {
+    const [updateUser] = useMutation(UPDATE_USER, {
         onCompleted: (data) => { console.log(`Success... ${data}`) },
         onError: (error) => { console.log(`Something happened... LUL ${error}`) }
     });
@@ -19,7 +19,7 @@ const CreaterUser = () => {
             role: ''
         },
         onSubmit: values => {
-            addUser({
+            updateUser({
                 variables: {
                     data: { ...values }
                 }
