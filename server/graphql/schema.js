@@ -9,6 +9,7 @@ const typeDefs = gql`
     type Mutation {
         addUser(data:UserInput!): User!
         updateUser(data:UserInput!): User!
+        deleteUser(id:String!): Boolean!
     }
 
     input UserInput {
