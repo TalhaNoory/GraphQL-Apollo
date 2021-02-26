@@ -35,7 +35,7 @@ const CreaterUser = () => {
                     <Form.Control
                         type="String"
                         name="id"
-                        placeholder="Enter ID..."
+                        placeholder="Enter new ID..."
                         onChange={formik.handleChange}
                         value={formik.values.id}
                     />
@@ -43,7 +43,7 @@ const CreaterUser = () => {
                     <Form.Control
                         type="String"
                         name="name"
-                        placeholder="Enter name..."
+                        placeholder="Enter new name..."
                         onChange={formik.handleChange}
                         value={formik.values.name}
                     />
@@ -51,7 +51,7 @@ const CreaterUser = () => {
                     <Form.Control
                         type="String"
                         name="role"
-                        placeholder="Enter title..."
+                        placeholder="Enter new title..."
                         onChange={formik.handleChange}
                         value={formik.values.role}
                     />
