@@ -23,3 +23,9 @@ export const UPDATE_USER = gql`
         }
     }
 `;
+
+export const DELETE_USER_BY_ID = gql`
+    mutation DeleteUser($id:String!) {
+        deleteUser(id:$id)
+    }
+`;

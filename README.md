@@ -16,3 +16,78 @@ Dependencies to install {
 
 To test something on the fly, without a Front-End
 npm install -g json-server(json-server --watch db.json --port 9000)
+
+-------------------------------------------------------
+
+Queris & Mutations {
+
+#CREATE
+
+    mutation AddUser(
+        $data:UserInput!
+    ) {
+        addUser(data:$data) {
+            id
+            name
+            role
+        }
+    }
+
+-------------------------------------------------------
+Query Variables
+{
+  "data": {
+    "id":"",
+    "name":"",
+    "role":""
+  }
+}
+-------------------------------------------------------
+
+#READ
+
+    query {
+        user(id:"ckf2aggbo000101ji0cs6hovq") {
+            name
+        }
+    }
+
+-------------------------------------------------------
+Query Variables (NONE!)
+-------------------------------------------------------
+
+#UPDATE
+    mutation UpdateUser(
+        $data:UserInput!
+    ) {
+        updateUser(data:$data) {
+            id
+            name
+            role
+        }
+    }
+
+-------------------------------------------------------
+Query Variables
+{
+  "data": {
+    "id": "ckf2aggbo000101ji0cs6y4et",
+    "name": "Kunde B",
+    "role": "CUSTOMER"
+  }
+}
+-------------------------------------------------------
+
+#DELETE
+    mutation DeleteUser($id:String!) {
+        deleteUser(id:$id)
+    }
+
+-------------------------------------------------------
+Query Variables
+{
+  "id": "Type ID Here!"
+}
+-------------------------------------------------------
+
+}
