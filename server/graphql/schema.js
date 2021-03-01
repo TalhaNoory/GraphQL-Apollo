@@ -1,5 +1,7 @@
 const { gql } = require("apollo-server");
 
+//https://graphql.org/learn/schema/ (Explanation)
+
 const typeDefs = gql`
     type Query {
         user(id:String!): User!

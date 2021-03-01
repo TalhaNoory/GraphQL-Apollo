@@ -6,8 +6,8 @@ Dependencies to install {
     3. npx create-react-app .
     (the '.' is to install where you are in the current folder!)
     4. npm i --save-dev nodemon
-    ("start": "node server/index.js",
-    "server":"nodemon server/index.js",
+    ("start": "node server/server.js",
+    "server":"nodemon server/server.js",
     "client":"npm start --prefix client",) Paste these inside the "script" package.json file
     Then to run both(server & client) at the same time by copy/paste the line below!
     ("dev":"concurrently \"npm run server\" \"npm run client\" ",)
