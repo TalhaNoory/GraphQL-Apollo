@@ -1,4 +1,5 @@
 const axios = require('axios');
+const db = require('../../db.json')
 
 const resolvers = {
     Query: {
@@ -51,6 +52,13 @@ const resolvers = {
             }
             return false;
         }
+    },
+    User: {
+        product: async (parent) => {
+            const response = await axios.get(`http://localhost:9000/product?producerid=${parent.id}`);
+            const promise = response.data.filter((product) => product.producerId === parent.id)
+            return promise
+        },
     }
 };
 

@@ -25,6 +25,21 @@ const typeDefs = gql`
         id: String!
         name: String
         role: String
+        product: [Product]
+    }
+
+    type Product {
+        id: String
+        producerId: String
+        title: String
+        type: String
+        image: String
+        category: String
+        unit: String
+        unitSize: Int
+        bulkUnit: String
+        bulkSize: Int
+        price: Float
     }
 `;
 
